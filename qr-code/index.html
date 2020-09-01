@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <title>QR CODE</title>
+</head>
+
+<body>
+  <div id="option">
+    <div class="active" id="btn1">&#8230;</div>
+    <div id="btn2">&#9974;</div>
+  </div>
+  <div id="main">
+    <div id="box1">
+      <div id="inputs">
+        <input type="text" placeholder="Enter your text" id="data">
+        <div id="msg">Hit enter to generate QR code</div>
+      </div>
+      <div id="outputbox">
+        <img src="qr.png" alt="QR">
+      </div>
+    </div>
+    <div class="" id="box2"></div>
+  </div>
+</body>
+<script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+<script src="app.js"></script>
+
+</html>
