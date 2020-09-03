@@ -1,0 +1,28 @@
+body {
+  margin: 0px;
+  height: 200%;
+}
+
+#main {
+  position: absolute;
+  top: 40%;
+  left: 20%;
+}
+
+.box {
+  width: 200px;
+  height: 250px;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.letter {
+  color: #2c7873;
+  font-family: arial;
+  font-size: 7cm;
+  line-height: 250px;
+  /* padding: 10px; */
+  position: relative;
+  /* left: -500px; */
+  transition: all .25s linear;
+}
