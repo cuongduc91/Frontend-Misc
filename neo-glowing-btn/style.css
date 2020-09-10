@@ -38,6 +38,7 @@ ul li label .icon {
   background: #18191f;
   color: #555;
   font-size: 2em;
+  /* font-weight: bolder; */
   display: flex;
   justify-content: center;
   align-items: center;
