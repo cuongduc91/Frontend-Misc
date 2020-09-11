@@ -47,7 +47,7 @@ section h2 {
   position: absolute;
   bottom: 0;
   max-width: 100%;
-  animation: animate calc(3s * var(--i)) linear infinite;
+  animation: animate calc(2s * var(--i)) linear infinite;
 }
 
 @keyframes animate {
