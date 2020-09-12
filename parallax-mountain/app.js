@@ -20,5 +20,5 @@ var scroll = window.pageYOffset;
 document.addEventListener('scroll', function (e) {
   var offset = window.pageYOffset;
   scroll = offset;
-  text.style.top = -scroll / 5 + '%';
+  text.style.top = -scroll / 10 + '%';
 })
