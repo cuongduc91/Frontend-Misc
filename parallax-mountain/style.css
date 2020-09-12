@@ -18,7 +18,7 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  transform: translateX(40%) translateY(220%)
+  transform: translateX(40%) translateY(230%)
 }
 
 .zoom {
@@ -32,7 +32,7 @@ body {
 
 .zoom #layer1 {
   position: absolute;
-  left: 50%;
+  left: 45%;
   width: 100%;
   /* bottom: 0; */
   transform: translateX(-50%);
