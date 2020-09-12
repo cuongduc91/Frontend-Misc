@@ -1,0 +1,104 @@
+body {
+  margin: 0;
+  padding: 0;
+  /* box-sizing: border-box; */
+  font-family: 'Poppins',
+    sans-serif;
+}
+
+.content {
+  position: relative;
+  padding: 75px 100px;
+}
+
+.zoom h2 {
+  font-size: 11em;
+  color: white;
+  z-index: 5;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateX(40%) translateY(220%)
+}
+
+.zoom {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  background: url(bg.jpg);
+  background-size: cover;
+}
+
+.zoom:before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 200px;
+  z-index: 1000;
+  background: linear-gradient(transparent, #fff)
+}
+
+.zoom #layer1 {
+  position: absolute;
+  left: 50%;
+  width: 100%;
+  /* bottom: 0; */
+  transform: translateX(-50%);
+  z-index: 10;
+}
+
+.zoom #layer2 {
+  position: absolute;
+  right: 0;
+  width: 100%;
+  z-index: 9;
+  /* bottom: 0; */
+}
+
+.banner {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: bottom;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner .clouds {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.banner .clouds img {
+  position: absolute;
+  bottom: 0;
+  max-width: 100%;
+  animation: animate calc(2s * var(--i)) linear infinite;
+  z-index: 20;
+}
+
+@keyframes animate {
+  0% {
+    opacity: 0;
+    transform: scale(1);
+  }
+
+  25%,
+  75% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    transform: scale(3);
+  }
+}
